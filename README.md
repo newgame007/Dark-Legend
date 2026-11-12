@@ -6,7 +6,9 @@
 
 地图、角色、怪物、材质、动画、技能特效与声音均由程序生成，连同运行库封装在约 **401 KiB** 的单个 HTML 文件中。支持电脑键鼠和手机触屏，不需要额外下载模型、贴图或音频，也不依赖 CDN 或游戏服务器。
 
-**[下载游戏文件 game.html](game.html)**
+**[▶ 在线游玩](https://newgame007.github.io/Dark-Legend/game.html)** · [查看 / 下载离线版 HTML](game.html)
+
+在线入口由 GitHub Pages 提供，需先完成下方的 Pages 发布设置；直接上传 HTML 文件不会自动开启网页托管。
 
 ## 游戏截图
 
@@ -39,8 +41,8 @@
 
 ## 开始游玩
 
-1. 下载本仓库中的 **`game.html`**。
-2. 使用支持 **WebGL 2** 和 **DecompressionStream** 的现代浏览器打开，建议使用新版 Chrome 或 Edge。
+1. 点击上方 **“▶ 在线游玩”**，或下载本仓库中的 **`game.html`** 离线运行。
+2. 使用支持 **WebGL 2** 和 **DecompressionStream** 的现代浏览器，建议使用新版 Chrome 或 Edge。离线游玩时用浏览器打开下载的 HTML。
 3. 点击“开始历练”进入游戏。声音在首次交互后启用，开始时会请求全屏；不支持全屏时仍可在浏览器窗口内游玩。
 
 手机建议横屏操作，并使用能执行网页脚本的浏览器打开。文件管理器中的文档预览可能无法运行游戏。
@@ -71,6 +73,17 @@
 场景使用空间裁剪、共享几何、静态矩阵冻结、粒子池与按需更新，减少重复计算和内存分配。实际帧率和耗电取决于设备、浏览器、画质设置与场景负载。
 
 这是离线单机演示，等级、经验与金币保存在当前页面内存中，刷新页面后重新开始。
+
+## GitHub Pages 发布
+
+仓库维护者首次发布时，在 [Settings → Pages](https://github.com/newgame007/Dark-Legend/settings/pages) 中完成以下设置：
+
+1. 在 **Build and deployment → Source** 选择 **Deploy from a branch**。
+2. 在 **Branch** 中选择 **main**，目录选择 **/ (root)**。
+3. 点击 **Save**，等待部署完成；可在仓库的 **Actions** 页面查看发布任务。
+4. 完成后，README 顶部的 **“▶ 在线游玩”** 即可打开游戏。
+
+在线地址：[https://newgame007.github.io/Dark-Legend/game.html](https://newgame007.github.io/Dark-Legend/game.html)。如果返回 404，请先确认 Pages 发布设置和部署结果，而不是修改游戏文件。
 
 ## 文件说明
 
