@@ -74,16 +74,6 @@
 
 这是离线单机演示，等级、经验与金币保存在当前页面内存中，刷新页面后重新开始。
 
-## GitHub Pages 发布
-
-仓库维护者首次发布时，在 [Settings → Pages](https://github.com/newgame007/Dark-Legend/settings/pages) 中完成以下设置：
-
-1. 在 **Build and deployment → Source** 选择 **Deploy from a branch**。
-2. 在 **Branch** 中选择 **main**，目录选择 **/ (root)**。
-3. 点击 **Save**，等待部署完成；可在仓库的 **Actions** 页面查看发布任务。
-4. 完成后，README 顶部的 **“▶ 在线游玩”** 即可打开游戏。
-
-在线地址：[https://newgame007.github.io/Dark-Legend/game.html](https://newgame007.github.io/Dark-Legend/game.html)。如果返回 404，请先确认 Pages 发布设置和部署结果，而不是修改游戏文件。
 
 ## 文件说明
 
